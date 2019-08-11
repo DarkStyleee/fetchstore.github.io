@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  {% include "./includes/head.twig" %}
+  <title>О нас</title>
+  <link rel="stylesheet" href="build/css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    {% include "./parts/header.twig" %}
+    <div class="about__main" itemscope itemtype="http://schema.org/Organization">
+        <div class="about__left">
+            <div class="about__left_title" itemprop="name">О магазине Фетч</div>
+            <div class="about__left_content">
+                <p>В магазине Фетч представлено более 100 ведущих мировых производителей одежды и обуви.</p> 
+                <p>Разнообразие ассортимента обеспечивают товары культовых брендов современности: Barbour, Fred Perry, Norse Projects, Edwin и капсульные коллекции компаний, делающих ставку на эксклюзивность и премиальный статус своей продукции — Stone Island, Polo Ralph Lauren, C.P. Company. </p>
+                <p>Приобрести последние можно лишь в нескольких торговых точках по всему миру, включая Фетч.</p> 
+                <p>Особый повод для гордости — обширная подборка редких и культовых кроссовок adidas Originals, Nike, New Balance, ASICS, Reebok и другие.</p>
+            </div>
+        </div>
+        <div class="about__right">
+            <div class="about__right_main">
+                <div class="about__right_main_content" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <p class="about__right_main_content_p1" itemprop="streetAddress">Москва, Тимирязевская, 3</p>
+                    <p class="about__right_main_content_p2" itemprop="email"><a href="mailto: shop@fetch.ru">shop@fetch.ru</a></p>
+                    <p class="about__right_main_content_p3" itemprop="telephone"><a href="tel: 8 800 912-11-42">8 800 912-11-42</a></p>
+                    <p class="about__right_main_content_p4">Звонок бесплатный</p>
+                    <p class="about__right_main_content_p5">ИНН/КПП: 2901152637 / 290101001</p>
+                    <p class="about__right_main_content_p6">ОГРН: 1062901063576</p>
+                    <p class="about__right_main_content_p7">БИК: 041117601, к/с 3010181010000000060</p>
+                    <p class="about__right_main_content_p8">Расчетный счет: 40702810004000103812 в отделении N8637 Сбербанка России, Архангельск</p>
+                    <p class="about__right_main_content_p9">Генеральный директор — Василенко Артём Викторович</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include "./parts/footer.twig" %}
+  </div>
+  
+{% include "./includes/scripts.twig" %}
+
+</body>
+</html>

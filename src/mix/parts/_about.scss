@@ -1,0 +1,92 @@
+.about__main {
+    max-width: 1136px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 64px;
+
+    .about__left {
+        max-width: 464px;
+        margin-right: 86px;
+
+        .about__left_title {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 41px;
+            margin-bottom: 32px;
+        }
+
+        .about__left_content {
+            font-size: 18px;
+            line-height: 23px;
+            p {
+                margin-top: 20px;
+            }
+        }
+    }
+
+
+    .about__right {
+        display: flex;
+        
+        align-items: center;
+        .about__right_main {
+            padding: 27px 60px 32px 26px;
+            background-color: #F2F2F2;
+
+            .about__right_main_content {
+                .about__right_main_content_p1 {
+                    margin-bottom: 16px;
+                }
+                .about__right_main_content_p2 {
+                    margin-bottom: 11px;
+                    a {
+                        color: #000000;
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+                .about__right_main_content_p3 {
+                    font-weight: bold;
+                    a {
+                        color: #000000;
+                        text-decoration: none;
+                        
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+                .about__right_main_content_p4 {
+                    font-size: 13px;
+                    line-height: 17px;
+                    margin-bottom: 30px;
+                }
+                .about__right_main_content_p7 {
+                    margin-bottom: 20px;
+                }
+                .about__right_main_content_p8 {
+                    margin-bottom: 20px;
+                }
+
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .about__main {
+        flex-wrap: wrap;
+        margin-bottom: 0 !important;
+        justify-content: center;
+    }
+    .about__left {
+        margin-right: 0 !important;
+        padding: 10px;
+    }
+    .about__right_main {
+        padding: 16px 10px 24px 10px !important;
+    }
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  {% include "./includes/head.twig" %}
+  <title>Каталог</title>
+  <link rel="stylesheet" href="build/css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    {% include "./parts/header.twig" %}
+    <div class="catalog__title">
+        <div class="catalog__title_text">
+            <p class="catalog__title_p">Обувь</p>
+        </div>
+    </div>
+    <div class="main__catalog">
+        {% set items = [
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img.png'},
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-1.png'},
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-2.png'},
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-3.png'},
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-4.png'},
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-5.png'},
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-6.png'},
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-7.png'},
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-8.png'},
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-9.png'},
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-10.png'},
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-11.png'},
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-12.png'},
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-13.png'},
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-14.png'},
+            {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-15.png'},
+        ] %}
+        {% for item in items %}
+        <div class="item__card" itemscope itemtype="http://schema.org/Product">
+            <img itemprop="image" src="build/img/catalog/item/{{item.img}}" alt="{{item.type}}">
+            <p itemprop="name" class="item__card_title"><a href="item.html">{{item.name}}</a></p>
+            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <meta itemprop="price" content="{{item.price}}">
+                <meta itemprop="priceCurrency" content="RUB">
+                <p class="item__card_type">{{item.type}}</p>
+                <p class="item__card_price">{{item.price}}</p>
+            </div>
+            <div style="display:none;" itemprop="description">{{item.name}}</div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="catalog__pagination">
+        <p class="catalog__pagination_text">Страницы</p>
+        <ul class="catalog__pagination_ul">
+            <li><a class="catalog__pagination_ul_link active" href="#">1</a></li>
+            <li><a class="catalog__pagination_ul_link" href="#">2</a></li>
+            <li><a class="catalog__pagination_ul_link" href="#">3</a></li>
+            <li><a class="catalog__pagination_ul_link" href="#">4</a></li>
+            <li><a class="catalog__pagination_ul_link" href="#">5</a></li>
+            <li><a class="catalog__pagination_ul_link" href="#">6</a></li>
+            <li><a class="catalog__pagination_ul_link" href="#">7</a></li>
+            <li><a class="catalog__pagination_ul_link" href="#">8</a></li>
+            <li><a class="catalog__pagination_ul_link" href="#">9</a></li>
+            <li><a class="catalog__pagination_ul_link" href="#">10</a></li>
+            <li><a class="catalog__pagination_ul_link" href="#">11</a></li>
+            <li><a class="catalog__pagination_ul_link" href="#">12</a></li>   
+        </ul>
+    </div>
+    {% include "./parts/footer.twig" %}
+  </div>
+  
+{% include "./includes/scripts.twig" %}
+
+</body>
+</html>

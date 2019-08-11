@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    {% include "./includes/head.twig" %}
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="http://kenwheeler.github.io/slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="build/css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    {% include "./parts/header.twig" %}
+    <div class="item__main_block" itemscope itemtype="http://schema.org/Product">
+        <div class="item__left">
+            <div class="item__left_name">
+                <p itemprop="name" class="item__left_name_title">Maison Margiela Fusion Low Sneakers</p>
+                <p class="item__left_name_description">Кроссовки</p>
+            </div>
+            <div class="item__left_form">
+                <form action="/" method="get">
+                    <div class="item__left_options">
+                        <div class="item__left_options_color">
+                            <p class="item__left_options_title">Цвет</p>
+                            <div class="item__left_options_inputs">
+                                <input id="radio1" class="item__left_options_color_radiobox" type="radio" name="color" value="Белый с розовым">
+                                <label for="radio1">Белый с розовым</label>
+                                <input id="radio2" class="item__left_options_color_radiobox" type="radio" name="color" value="Белый с зелёным">
+                                <label for="radio2">Белый с зелёным</label>
+                            </div>
+                        </div>
+                        <div class="item__left_options_size">
+                            <p class="item__left_options_title">Размер US</p>
+                            <div class="item__left_options_inputs">
+                                <input id="radio3" class="item__left_options_size_radiobox" type="radio" name="size" value="6">
+                                <label for="radio3">6</label>                    
+                                <input id="radio4" class="item__left_options_size_radiobox" type="radio" name="size" value="6,5">
+                                <label for="radio4">6,5</label>
+                                <input id="radio5" class="item__left_options_size_radiobox" type="radio" name="size" value="7">
+                                <label for="radio5">7</label>
+                                <input id="radio6" class="item__left_options_size_radiobox" type="radio" name="size" value="9">
+                                <label for="radio6">9</label>
+                            </div>
+                        </div>
+                        <a class="item__left_options_table-size-link" href="#table_size">Таблица размеров</a>
+                        <div id="table_size" class="zoom-anim-dialog mfp-hide">
+                            <div class="table_size_limiter">
+                                <h1>Таблица размеров</h1>
+                                <table class="table_size">
+                                    <tr>
+                                        <td class="size_type">US</td>
+                                        <td>4</td>
+                                        <td>4,5</td>
+                                        <td>5</td>
+                                        <td>5,5</td>
+                                        <td>6</td>
+                                        <td>6,5</td>
+                                        <td>7</td>
+                                        <td>7,5</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="size_type">UK</td>
+                                        <td>3,5</td>
+                                        <td>4</td>
+                                        <td>4,5</td>
+                                        <td>5</td>
+                                        <td>5,5</td>
+                                        <td>6</td>
+                                        <td>6,5</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="size_type">EU</td>
+                                        <td>36</td>
+                                        <td>37</td>
+                                        <td>38</td>
+                                        <td>39</td>
+                                        <td>40</td>
+                                        <td>41</td>
+                                        <td>42</td>
+                                        <td>43</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div style="display:none;" itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+                            <span itemprop="price">92000</span>
+                            <span itemprop="priceCurrency">RUB</span>
+                        </div>
+                        <input class="item__left_options_btn" type="button" value="Купить, 92 000 ₽" onclick="addCart()">
+                    </div>
+                </form>
+            </div>
+            
+            <div class="item__left_description">
+                <div class="item__left_description_top">
+                    <div>
+                        <p class="item__left_description_title">Материал</p>
+                        <p class="item__left_description_description">Кожа, текстиль</p>
+                    </div>
+                    <div>
+                        <p class="item__left_description_title">Страна-производитель</p>
+                        <p class="item__left_description_description">Италия</p>
+                    </div>
+                </div>
+                <div class="item__left_description_center">
+                    <p class="item__left_description_title">Описание</p>
+                    <div itemprop="description" class="item__left_description_center_description">
+                        <p>Деконструктивный и авангардный дизайн с уникальными концепциями и нетрадиционным мастерством.</p>
+                        <p>В качестве материала используются два вида кожи. Верх дополнен деталями из сетчатого материала и текстиля.</p>
+                        <p>Грубые и многослойные кроссовки показывают отличие от традиционного аккуратного стиля создания обуви. Они оснащены раскрашенной вручную резиновой подошвой с брызгами и потеками.</p>
+                        <p>Оригинальная слегка асимметричная система шнуровки и фирменный стежок на заднике завершают уникальный внешний вид.</p>
+                    </div>
+                </div>
+                <div class="item__left_description_bottom">
+                    <p class="item__left_description_title">Детали</p>
+                    <ul class="item__left_description_bottom_description">
+                        <li>Два вида кожи</li>
+                        <li>Детали из текстиля</li>
+                        <li>Неординарная шнуровка</li>
+                        <li>Перфорация на мыске</li>
+                        <li>Стежок на заднике</li>
+                        <li>Фигурная резиновая подошва</li>
+                        <li>Цепкая подметка</li>
+                        <li>Окрашивание с брызгами и потеками</li>
+                        <li>Пестрая расцветка</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item__right">
+            <div class="item__fotorama">
+                <div class="fotorama"
+                    data-autoplay="false"
+                    data-arrows="false"
+                    data-click="false"
+                    data-swipe="false"
+                    data-transition="crossfade"
+                    data-nav="thumbs"
+                    data-loop="true"
+                    data-thumbwidth="140"
+                    data-thumbheight="140">
+                    <a itemprop="image" href="build/img/item/1_min.jpg"></a>
+                    <a itemprop="image" href="build/img/item/2_min.jpg"></a>
+                    <a itemprop="image" href="build/img/item/3_min.jpg"></a>
+                    <a itemprop="image" href="build/img/item/4_min.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {% include "./parts/recommended.twig" %}
+    {% include "./parts/footer.twig" %}
+  </div>
+
+{% include "./includes/scripts.twig" %}
+<script src="build/scripts/addcart.js"></script>
+
+</body>
+</html>

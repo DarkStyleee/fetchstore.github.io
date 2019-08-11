@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="build/css/reset.css">
+<link rel="stylesheet" href="build/css/magnific-popup.css">
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="http://kenwheeler.github.io/slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="build/css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header" data-theme="white">
+    <nav class="header__nav">
+        <div class="header__nav_left">
+            <div class="header__nav_left_logo"><p class="header__nav_left_logo_text"><a href="/">Фетч</a></p></div>
+            <div class="header__nav_left_menu_wrapper">
+                <div class="header__nav_left_menu_limiter">
+                    <menu class="header__nav_menu" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                        
+                        
+                            <li itemprop="name" class="header__nav_links-link"><a itemprop="url" href="#">Одежда</a></li>
+                        
+                            <li itemprop="name" class="header__nav_links-link"><a itemprop="url" href="#">Обувь</a></li>
+                        
+                            <li itemprop="name" class="header__nav_links-link"><a itemprop="url" href="#">Аксессуары</a></li>
+                        
+                            <li itemprop="name" class="header__nav_links-link"><a itemprop="url" href="#">Блог</a></li>
+                        
+                            <li itemprop="name" class="header__nav_links-link"><a itemprop="url" href="catalog.html">Магазин</a></li>
+                        
+                            <li itemprop="name" class="header__nav_links-link"><a itemprop="url" href="#">Доставка и оплата</a></li>
+                        
+                    </menu>
+                </div>    
+            </div>
+        </div>
+        <div class="header__nav_right">
+        <a href="checkout.html" class="header__nav_links-right">
+            <div class="header__nav_right_img">
+                <span class="header__nav_right_counter"></span>
+                <img src="build/img/icon-counter.png" alt="counter" class="header__nav_right_counter_img">
+                <svg class="header__nav_right_cart_img" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M48 11.9174L9.19149 7.45455L6.6383 2.49587L0.510638 2L0 3.98347L4.08511 5.47107L10.7234 29.2727L13.2766 38.6942H44.4255L44.9362 35.719H14.8085L13.2766 29.2727L46.4681 24.314L48 11.9174Z" fill="black"/>
+                <path d="M19.9149 42.6612C19.9149 44.3043 18.5432 45.6364 16.8511 45.6364C15.159 45.6364 13.7872 44.3043 13.7872 42.6612C13.7872 41.018 15.159 39.6859 16.8511 39.6859C18.5432 39.6859 19.9149 41.018 19.9149 42.6612Z" fill="black"/>
+                <path d="M41.3617 42.6612C41.3617 44.3043 39.99 45.6364 38.2979 45.6364C36.6058 45.6364 35.234 44.3043 35.234 42.6612C35.234 41.018 36.6058 39.6859 38.2979 39.6859C39.99 39.6859 41.3617 41.018 41.3617 42.6612Z" fill="black"/>
+                </svg>
+            </div>
+            <p class="header__nav_right_text">Оформить заказ</p>
+        </a>
+        </div>
+    </nav>
+</header>
+    <div class="item__main_block" itemscope itemtype="http://schema.org/Product">
+        <div class="item__left">
+            <div class="item__left_name">
+                <p itemprop="name" class="item__left_name_title">Maison Margiela Fusion Low Sneakers</p>
+                <p class="item__left_name_description">Кроссовки</p>
+            </div>
+            <div class="item__left_form">
+                <form action="/" method="get">
+                    <div class="item__left_options">
+                        <div class="item__left_options_color">
+                            <p class="item__left_options_title">Цвет</p>
+                            <div class="item__left_options_inputs">
+                                <input id="radio1" class="item__left_options_color_radiobox" type="radio" name="color" value="Белый с розовым">
+                                <label for="radio1">Белый с розовым</label>
+                                <input id="radio2" class="item__left_options_color_radiobox" type="radio" name="color" value="Белый с зелёным">
+                                <label for="radio2">Белый с зелёным</label>
+                            </div>
+                        </div>
+                        <div class="item__left_options_size">
+                            <p class="item__left_options_title">Размер US</p>
+                            <div class="item__left_options_inputs">
+                                <input id="radio3" class="item__left_options_size_radiobox" type="radio" name="size" value="6">
+                                <label for="radio3">6</label>                    
+                                <input id="radio4" class="item__left_options_size_radiobox" type="radio" name="size" value="6,5">
+                                <label for="radio4">6,5</label>
+                                <input id="radio5" class="item__left_options_size_radiobox" type="radio" name="size" value="7">
+                                <label for="radio5">7</label>
+                                <input id="radio6" class="item__left_options_size_radiobox" type="radio" name="size" value="9">
+                                <label for="radio6">9</label>
+                            </div>
+                        </div>
+                        <a class="item__left_options_table-size-link" href="#table_size">Таблица размеров</a>
+                        <div id="table_size" class="zoom-anim-dialog mfp-hide">
+                            <div class="table_size_limiter">
+                                <h1>Таблица размеров</h1>
+                                <table class="table_size">
+                                    <tr>
+                                        <td class="size_type">US</td>
+                                        <td>4</td>
+                                        <td>4,5</td>
+                                        <td>5</td>
+                                        <td>5,5</td>
+                                        <td>6</td>
+                                        <td>6,5</td>
+                                        <td>7</td>
+                                        <td>7,5</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="size_type">UK</td>
+                                        <td>3,5</td>
+                                        <td>4</td>
+                                        <td>4,5</td>
+                                        <td>5</td>
+                                        <td>5,5</td>
+                                        <td>6</td>
+                                        <td>6,5</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="size_type">EU</td>
+                                        <td>36</td>
+                                        <td>37</td>
+                                        <td>38</td>
+                                        <td>39</td>
+                                        <td>40</td>
+                                        <td>41</td>
+                                        <td>42</td>
+                                        <td>43</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div style="display:none;" itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+                            <span itemprop="price">92000</span>
+                            <span itemprop="priceCurrency">RUB</span>
+                        </div>
+                        <input class="item__left_options_btn" type="button" value="Купить, 92 000 ₽" onclick="addCart()">
+                    </div>
+                </form>
+            </div>
+            
+            <div class="item__left_description">
+                <div class="item__left_description_top">
+                    <div>
+                        <p class="item__left_description_title">Материал</p>
+                        <p class="item__left_description_description">Кожа, текстиль</p>
+                    </div>
+                    <div>
+                        <p class="item__left_description_title">Страна-производитель</p>
+                        <p class="item__left_description_description">Италия</p>
+                    </div>
+                </div>
+                <div class="item__left_description_center">
+                    <p class="item__left_description_title">Описание</p>
+                    <div itemprop="description" class="item__left_description_center_description">
+                        <p>Деконструктивный и авангардный дизайн с уникальными концепциями и нетрадиционным мастерством.</p>
+                        <p>В качестве материала используются два вида кожи. Верх дополнен деталями из сетчатого материала и текстиля.</p>
+                        <p>Грубые и многослойные кроссовки показывают отличие от традиционного аккуратного стиля создания обуви. Они оснащены раскрашенной вручную резиновой подошвой с брызгами и потеками.</p>
+                        <p>Оригинальная слегка асимметричная система шнуровки и фирменный стежок на заднике завершают уникальный внешний вид.</p>
+                    </div>
+                </div>
+                <div class="item__left_description_bottom">
+                    <p class="item__left_description_title">Детали</p>
+                    <ul class="item__left_description_bottom_description">
+                        <li>Два вида кожи</li>
+                        <li>Детали из текстиля</li>
+                        <li>Неординарная шнуровка</li>
+                        <li>Перфорация на мыске</li>
+                        <li>Стежок на заднике</li>
+                        <li>Фигурная резиновая подошва</li>
+                        <li>Цепкая подметка</li>
+                        <li>Окрашивание с брызгами и потеками</li>
+                        <li>Пестрая расцветка</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item__right">
+            <div class="item__fotorama">
+                <div class="fotorama"
+                    data-autoplay="false"
+                    data-arrows="false"
+                    data-click="false"
+                    data-swipe="false"
+                    data-transition="crossfade"
+                    data-nav="thumbs"
+                    data-loop="true"
+                    data-thumbwidth="140"
+                    data-thumbheight="140">
+                    <a itemprop="image" href="build/img/item/1_min.jpg"></a>
+                    <a itemprop="image" href="build/img/item/2_min.jpg"></a>
+                    <a itemprop="image" href="build/img/item/3_min.jpg"></a>
+                    <a itemprop="image" href="build/img/item/4_min.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="item__recomended_block">
+    <div class="item__recomended_block_title"><p>Вам может быть интересно</p></div>
+    <div class="item_fotorama_slider">
+        
+        
+        <div class="item__card">
+            <img src="build/img/catalog/item/img.png" alt="Кроссовки">
+            <p class="item__card_title"><a href="#">Maison Margiela Fusion Low Sneakers</a></p>
+            <p class="item__card_type">Кроссовки</p>
+            <p class="item__card_price">92 000 ₽</p>
+        </div>
+        
+        <div class="item__card">
+            <img src="build/img/catalog/item/img-1.png" alt="Кроссовки">
+            <p class="item__card_title"><a href="#">Maison Margiela Fusion Low Sneakers</a></p>
+            <p class="item__card_type">Кроссовки</p>
+            <p class="item__card_price">92 000 ₽</p>
+        </div>
+        
+        <div class="item__card">
+            <img src="build/img/catalog/item/img-2.png" alt="Кроссовки">
+            <p class="item__card_title"><a href="#">Maison Margiela Fusion Low Sneakers</a></p>
+            <p class="item__card_type">Кроссовки</p>
+            <p class="item__card_price">92 000 ₽</p>
+        </div>
+        
+        <div class="item__card">
+            <img src="build/img/catalog/item/img-3.png" alt="Кроссовки">
+            <p class="item__card_title"><a href="#">Maison Margiela Fusion Low Sneakers</a></p>
+            <p class="item__card_type">Кроссовки</p>
+            <p class="item__card_price">92 000 ₽</p>
+        </div>
+        
+        <div class="item__card">
+            <img src="build/img/catalog/item/img-4.png" alt="Кроссовки">
+            <p class="item__card_title"><a href="#">Maison Margiela Fusion Low Sneakers</a></p>
+            <p class="item__card_type">Кроссовки</p>
+            <p class="item__card_price">92 000 ₽</p>
+        </div>
+        
+        <div class="item__card">
+            <img src="build/img/catalog/item/img-5.png" alt="Кроссовки">
+            <p class="item__card_title"><a href="#">Maison Margiela Fusion Low Sneakers</a></p>
+            <p class="item__card_type">Кроссовки</p>
+            <p class="item__card_price">92 000 ₽</p>
+        </div>
+        
+        <div class="item__card">
+            <img src="build/img/catalog/item/img-6.png" alt="Кроссовки">
+            <p class="item__card_title"><a href="#">Maison Margiela Fusion Low Sneakers</a></p>
+            <p class="item__card_type">Кроссовки</p>
+            <p class="item__card_price">92 000 ₽</p>
+        </div>
+        
+    </div>
+</div>
+    <footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__main">
+            <nav class="footer__nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                <div class="footer__nav_one_logo"><p class="footer__nav_logo_text"><a itemprop="url" href="/">Фетч</a></p></div>
+                <div class="footer__nav_menu">
+                    <p><a itemprop="url" href="catalog.html" class="footer__nav_link">Магазин</a></p>
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Блог</a></p>
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Доставка и оплата</a></p>
+                </div>
+                <div class="footer__nav_address">
+                    <p><a itemprop="url" class="footer__nav_address_email" href="mailto: shop@fetch.ru">shop@fetch.ru</a></p>
+                    <p><a itemprop="url" class="footer__nav_address_phone" href="tel: 8 800 912-11-42">8 800 912-11-42</a></p>
+                    <p><p class="footer__nav_address_text">Звонок бесплатный</p></p>
+                </div>
+            </nav>
+            <nav class="footer__nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                <div class="footer__nav_two_logo"><p class="footer__nav_title_text"><a href="#">Для мужчин</a></p></div>
+                <div class="footer__nav_menu">
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Верхняя одежда</a></p>
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Рубашки и поло</a></p>
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Трикотаж</a></p>
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Брюки и джинсы</a></p>
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Бельё и носки</a></p>
+                </div>
+            </nav>
+            <nav class="footer__nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                <div class="footer__nav_three_logo"><p class="footer__nav_title_text"><a href="#">Для женщин</a></p></div>
+                <div class="footer__nav_menu">
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Верхняя одежда</a></p>
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Рубашки и поло</a></p>
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Трикотаж</a></p>
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Брюки и джинсы</a></p>
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Бельё и носки</a></p>
+                </div>
+            </nav>
+            <nav class="footer__nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                <div class="footer__nav_four_logo"><p class="footer__nav_title_text"><a href="#">Обувь</a></p></div>
+                <div class="footer__nav_menu">
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Кроссовки и кеды</a></p>
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Ботинки</a></p>
+                </div>
+            </nav>
+            <nav class="footer__nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                <div class="footer__nav_five_logo"><p class="footer__nav_title_text"><a href="#">Акссесуары</a></p></div>
+                <div class="footer__nav_menu">
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Сумки и рюкзаки</a></p>
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Часы</a></p>
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Бижутерия</a></p>
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Средства для ухода</a></p>
+                </div>
+            </nav>
+            <nav class="footer__nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                <div class="footer__nav_six_logo"><p class="footer__nav_title_text"><a href="#">Скидки</a></p></div>
+                <div class="footer__nav_menu">
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Летняя распродажа</a></p>
+                    <p><a itemprop="url" href="#" class="footer__nav_link">Коллекция 2018</a></p>
+                </div>
+            </nav>
+        </div>
+        <div class="footer__copyright" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+            <p class="footer__copyright_copy">© Фетч-команда, 2019</p>
+            <p class="footer__copyright_personal"><a itemprop="url" class="footer__copyright_personal_popup" href="#small-dialog">Правила обработки персональных данных</a></p>
+            <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                <h1>Правила обработки персональных данных</h1>
+                <p>Предоставляя свои персональные данные Пользователь даёт согласие на обработку, хранение и использование своих персональных данных на основании ФЗ № 152-ФЗ &laquo;О персональных данных&raquo; от 27.07.2006 г. в следующих целях:</p>
+                <p>Осуществление клиентской поддержки;</p>
+                <p>Получения Пользователем информации о маркетинговых событиях; Проведения аудита и внутренних исследований с целью повышения качества предоставляемых услуг.</p>
+                <p>Под персональными данными подразумевается любая информация личного характера, позволяющая установить личность Пользователя, такая как:</p>
+                <p>Фамилия, имя и отчество</p>
+                <p>Персональные данные Пользователей хранятся исключительно на электронных носителях и обрабатываются с использованием автоматизированных систем, за исключением случаев, когда неавтоматизированная обработка персональных данных необходима в связи с исполнением требований законодательства.</p>
+                <p>Компания обязуется не передавать полученные персональные данные третьим лицам, за исключением следующих случаев:</p>
+                <p>По запросам уполномоченных органов государственной власти РФ только по основаниям и в порядке, установленным законодательством РФ</p>
+                <p>Компания оставляет за собой право вносить изменения в одностороннем порядке в настоящие правила, при условии, что изменения не противоречат действующему законодательству РФ. Изменения условий настоящих правил вступают в силу после их публикации на Сайте.</p>
+            </div>
+            <p class="footer__copyright_support"><a itemprop="url" href="#">Разработка и поддержка сайта</a></p>
+        </div>
+    </div>
+    <p></p>
+</footer>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="build/scripts/jquery.magnific-popup.js"></script>
+<script src="build/scripts/api.js"></script>
+<script src="build/scripts/bundle.js"></script>
+
+<script src="build/scripts/addcart.js"></script>
+
+</body>
+</html>

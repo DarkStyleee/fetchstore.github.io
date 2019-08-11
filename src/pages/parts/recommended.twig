@@ -1,0 +1,22 @@
+<div class="item__recomended_block">
+    <div class="item__recomended_block_title"><p>Вам может быть интересно</p></div>
+    <div class="item_fotorama_slider">
+        {% set items = [
+        {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img.png'},
+        {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-1.png'},
+        {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-2.png'},
+        {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-3.png'},
+        {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-4.png'},
+        {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-5.png'},
+        {name: 'Maison Margiela Fusion Low Sneakers', type: 'Кроссовки', price: '92 000 ₽', img: 'img-6.png'},
+        ] %}
+        {% for item in items %}
+        <div class="item__card">
+            <img src="build/img/catalog/item/{{item.img}}" alt="{{item.type}}">
+            <p class="item__card_title"><a href="#">{{item.name}}</a></p>
+            <p class="item__card_type">{{item.type}}</p>
+            <p class="item__card_price">{{item.price}}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>

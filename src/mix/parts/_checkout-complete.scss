@@ -1,0 +1,39 @@
+.checkout-complete_main {
+    max-width: 1136px;
+    margin: 0 auto;
+    margin-top: 80px;
+
+    p {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    a {
+        color: black;
+
+        &:hover {
+            color: $link_color;
+        }
+    }
+
+    .checkout-complete_main_title {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 41px;
+    }
+
+    .checkout-complete_main_links {
+        margin-top: 32px;
+
+        p {
+            margin-top: 20px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+    .checkout-complete_main {
+        margin-left: 10px;
+    }
+}

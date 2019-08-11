@@ -1,0 +1,209 @@
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding-bottom: 32px;
+    a {
+        color: white;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    .footer__wrapper {
+        max-width: 1136px;
+        width: 97%;
+        margin: 0 auto;
+
+        .footer__main {
+            padding: 32px 0;
+            display: flex;
+    
+            .footer__nav {
+    
+                .footer__nav_logo_text {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 23px;
+                    margin-bottom: 12px;
+                    
+                    a {
+                        text-decoration: none;
+                    }
+                }
+    
+                .footer__nav_title_text {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 23px;
+                    text-decoration-line: underline;
+                    margin-bottom: 12px;
+                }
+    
+                .footer__nav_menu {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 9px;
+                    margin-right: 39px;
+                    margin-top: -6px;
+
+                    p {
+                        margin-top: 8px;
+                    }
+    
+                    a {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+
+                }
+            }
+        }
+
+        .footer__copyright {
+            display: flex;
+            margin-top: 32px;
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 17px;
+                color: #666666;
+                margin-right: 24px;
+            }
+
+            a {
+                color: #666666;
+                text-decoration-line: underline;
+
+                &:hover {
+                    color: white;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    
+}
+
+.footer__nav_address {
+   display: flex;
+   flex-direction: column;
+   margin-top: 32px;
+   margin-left: 9px;
+
+   .footer__nav_address_email {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        margin-bottom: 8px;
+   }
+
+   .footer__nav_address_phone {
+        font-family: PT Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        color: #FFFFFF;
+        text-decoration: none;
+   }
+   
+   .footer__nav_address_text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 17px;
+        color: #FFFFFF;
+        opacity: 0.75;
+        margin-top: 0;
+   }
+}
+
+@media screen and (max-width: 1199px) {
+    .footer__main {
+        flex-direction: column;
+        
+    }
+
+    .footer__copyright {
+        flex-direction: column;
+
+        p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+    }
+    .footer__nav_title_text {
+        margin-top: 32px;
+    }
+}
+
+#small-dialog {
+	background: white;
+	padding: 20px 30px;
+	text-align: left;
+	max-width: 400px;
+	margin: 40px auto;
+    position: relative;
+    
+    p {
+        margin-bottom: 15px;
+    }
+}
+
+
+.my-mfp-zoom-in .zoom-anim-dialog {
+	opacity: 0;
+
+	-webkit-transition: all 0.2s ease-in-out; 
+	-moz-transition: all 0.2s ease-in-out; 
+	-o-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out; 
+
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+}
+
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+
+	-webkit-transform: scale(1); 
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	-o-transform: scale(1); 
+	transform: scale(1); 
+}
+
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+
+	opacity: 0;
+}
+
+#small-dialog {
+    max-width: 50% !important;
+}
+
+@media screen and (max-width: 1199px) {
+    #small-dialog {
+        max-width: 80% !important;
+        font-size: 14px;
+    }
+}

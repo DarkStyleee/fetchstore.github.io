@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    {% include "./includes/head.twig" %}
+    <title>Заказ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="http://kenwheeler.github.io/slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="build/css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    {% include "./parts/header.twig" %}
+    <div class="checkout-complete_main">
+        <p class="checkout-complete_main_title">Заказ №213 оформлен</p>
+        <div class="checkout-complete_main_links">
+            <p>Скоро вам позвонит менеджер, чтобы подтвердить заказ.</p>
+            <p><a href="/">Вернуться на главную</a>&nbsp;или&nbsp;<a href="catalog.html">продолжить покупки в каталоге</a></p>
+        </div>
+    </div>
+    {% include "./parts/recommended.twig" %}
+    {% include "./parts/footer.twig" %}
+  </div>
+
+{% include "./includes/scripts.twig" %}
+</body>
+</html>
